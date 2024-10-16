@@ -2,6 +2,7 @@
 
 ## 1.
 
+### Question
 ```
 There is an array, each item has such format:
 { firstName: 'xxx', lastName: 'xxx', customerID: 'xxx', note: 'xxx', profession: ‘xxx’ }
@@ -12,7 +13,9 @@ profession can only have ‘student’, ‘freelancer’, ‘productOwner’, �
 /**
 Q1. Please follow the principle (‘firstName’ + ‘lastName’ + ‘customerID’) to sort this array and print it out.
 **/
-
+```
+### Answer
+```
 function sortUserName(user) {
 
 }
