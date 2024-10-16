@@ -4,7 +4,7 @@
 
 ### Question
 
-```=
+```javascript=
 There is an array, each item has such format:
 { firstName: 'xxx', lastName: 'xxx', customerID: 'xxx', note: 'xxx', profession: ‘xxx’ }
 lastName, note can be empty, customerID can only be a set of digital numbers.
@@ -18,7 +18,7 @@ Q1. Please follow the principle (‘firstName’ + ‘lastName’ + ‘customerI
 
 ### Answer
 
-```=
+```javascript=
 function sortUserName(user) {
   return user.sort((a, b) => {
     const userA = a.firstName + a.lastName + a.customerID;
@@ -51,7 +51,7 @@ function sortUserName(user) {
 </div>
 ```
 
-```css
+```css=
 .container {
   font-size: 14px;
 }
@@ -75,10 +75,18 @@ Q: How to fix it to make it work on the 1st list?
 A: Instead of using `.container .shop-list .item`, we need to use `.container .shop-list ol.item` to make it work on the 1st list.
     
 ## 3.
+
+### Question
+```javascript=
 /**
 let items = [1, 1, 1, 5, 2, 3, 4, 3, 3, 3, 3, 3, 3, 7, 8, 5, 4, 9, 0, 1, 3, 2, 6, 7, 5, 4, 4, 7, 8, 8, 0, 1, 2, 3, 1];
 Please write down a function to console log unique value from this array.
 **/
+```
+
+### Answer
+```javascript=
 function getUniqueNumber (items) {
     console.log(Array.from(new Set(items)));
 }
+```
