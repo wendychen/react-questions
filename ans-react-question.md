@@ -76,7 +76,7 @@ console.log(sortedCustomers);
 /* Write styling make every other line give background color to next one */
 ```
 
-### Answer
+### Answers
 
 #### Explain why does this color not works
 
