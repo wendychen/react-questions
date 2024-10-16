@@ -16,6 +16,7 @@ Q1. Please follow the principle (‘firstName’ + ‘lastName’ + ‘customerI
 function sortUserName(user) {
 
 }
+```
 
 ## 2.
 
