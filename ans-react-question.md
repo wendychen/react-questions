@@ -3,10 +3,11 @@
 ## 1.
 
 ### Question
-```
+
+```=
 There is an array, each item has such format:
 { firstName: 'xxx', lastName: 'xxx', customerID: 'xxx', note: 'xxx', profession: ‘xxx’ }
-**lastName**, note can be empty, customerID can only be a set of digital numbers.
+lastName, note can be empty, customerID can only be a set of digital numbers.
 profession can only have ‘student’, ‘freelancer’, ‘productOwner’, ‘engineer’ or ‘systemAnalytics’.
 **/
 
@@ -14,8 +15,10 @@ profession can only have ‘student’, ‘freelancer’, ‘productOwner’, �
 Q1. Please follow the principle (‘firstName’ + ‘lastName’ + ‘customerID’) to sort this array and print it out.
 **/
 ```
+
 ### Answer
-```
+
+```=
 function sortUserName(user) {
 
 }
