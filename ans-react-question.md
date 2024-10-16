@@ -110,3 +110,48 @@ function getUniqueNumber (items) {
     console.log(Array.from(new Set(items)));
 }
 ```
+
+## 4.
+```
+/** Can you explain about Interface and Enum, and where will you be using, please make some examples. **/
+```
+
+
+
+## 5.
+```javascript=
+/** Can you explain the problem with the following code, and how to fix it. **/
+class Count extends React.Component { constructor(props) {
+super(props);
+this.state = { count: 0 };
+this.handleAddCount = this.handleAddCount.bind(this);
+}
+handleAddCount(){
+  this.setState({
+  this.setState({
+  this.setState({
+}
+render() {
+  return (
+<div>
+count: this.state.count + 1 });
+count: this.state.count + 1 });
+count: this.state.count + 1 });
+<h2>{this.state.count}</h2>
+<button onClick={this.handleAddCount}>Add</button> </div>
+); }
+}
+ReactDOM.render(
+<Count />, document.getElementById('root')
+);
+```
+
+## 6.
+```
+/** Please write the sample code to debounce handleOnChange **/
+var SearchBox = React.createClass({ render: function() {
+return <input type="search" name="p" onChange={this.handleOnChange} />;
+},
+handleOnChange: function(event) { // make ajax call
+} });
+```
