@@ -20,7 +20,11 @@ Q1. Please follow the principle (‘firstName’ + ‘lastName’ + ‘customerI
 
 ```=
 function sortUserName(user) {
-
+  return user.sort((a, b) => {
+    const userA = a.firstName + a.lastName + a.customerID;
+    const userB = b.firstName + b.lastName + b.customerID;
+    return userA.localeCompare(userB);
+  });
 }
 ```
 
