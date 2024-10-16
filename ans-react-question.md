@@ -76,8 +76,23 @@ console.log(sortedCustomers);
 /* Write styling make every other line give background color to next one */
 ```
 
-Q: How to fix it to make it work on the 1st list?
+### Answer
+
+#### Explain why does this color not works
+
+#### How to fix it to make it work on the 1st list
 A: Instead of using `.container .shop-list .item`, we need to use `.container ol.shop-list .item` to make it work on the 1st list.
+
+#### Write styling make every other line give background color to next one
+```css=
+.container .shop-list li:nth-child(odd) {
+  background-color: white; /* This applies to odd items */
+}
+
+.container .shop-list li:nth-child(even) {
+  background-color: lightgray; /* This applies to even items */
+}
+```
     
 ## 3.
 
