@@ -77,7 +77,7 @@ console.log(sortedCustomers);
 ```
 
 Q: How to fix it to make it work on the 1st list?
-A: Instead of using `.container .shop-list .item`, we need to use `.container .shop-list ol.item` to make it work on the 1st list.
+A: Instead of using `.container .shop-list .item`, we need to use `.container ol.shop-list .item` to make it work on the 1st list.
     
 ## 3.
 
