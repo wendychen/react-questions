@@ -19,6 +19,7 @@ Q1. Please follow the principle (‘firstName’ + ‘lastName’ + ‘customerI
 ### Answer
 
 ```javascript=
+// Function to sort the array
 function sortUserName(user) {
   return user.sort((a, b) => {
     const userA = a.firstName + a.lastName + a.customerID;
@@ -26,6 +27,10 @@ function sortUserName(user) {
     return userA.localeCompare(userB);
   });
 }
+
+// Sort and print the result
+const sortedCustomers = sortUserName(customers);
+console.log(sortedCustomers);
 ```
 
 ## 2.
