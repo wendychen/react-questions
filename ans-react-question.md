@@ -178,7 +178,85 @@ function getUniqueNumber (items) {
 - `Interface` is to define the structure of an object.
 - `Enum` is to define a set of name constants, and each represents a distinct value.
 
+#### Example of Interface
+```javascript
+interface Customer {
+  customerID: number;
+  name: string;
+  email: string;
+  isActive: boolean;
+}
 
+const newCustomer: Customer = {
+  customerID: 101,
+  name: "Alice Johnson",
+  email: "alice.johnson@example.com",
+  isActive: true,
+};
+
+function displayCustomerInfo(customer: Customer) {
+  console.log(`Customer ID: ${customer.customerID}`);
+  console.log(`Name: ${customer.name}`);
+  console.log(`Email: ${customer.email}`);
+  console.log(`Active: ${customer.isActive ? "Yes" : "No"}`);
+}
+
+displayCustomerInfo(newCustomer);
+```
+
+#### Example of Enum
+
+```javascript
+enum Weekday {
+  Sunday,
+  Monday,
+  Tuesday,
+  Wednesday,
+  Thursday,
+  Friday,
+  Saturday
+}
+
+function isWeekend(day: Weekday): boolean {
+  return day === Weekday.Saturday || day === Weekday.Sunday;
+}
+
+const today: Weekday = Weekday.Friday;
+
+console.log(`Is today the weekend? ${isWeekend(today) ? "Yes" : "No"}`);
+```
+
+#### Example of Interface and Enum
+
+```javascript
+enum MembershipLevel {
+  Basic,
+  Silver,
+  Gold,
+  Platinum
+}
+
+interface Customer {
+  customerID: number;
+  name: string;
+  email: string;
+  membership: MembershipLevel;  // Use enum as a property type
+}
+
+const customer1: Customer = {
+  customerID: 1,
+  name: "John Doe",
+  email: "john.doe@example.com",
+  membership: MembershipLevel.Gold  // Assign enum value
+};
+
+function displayCustomerDetails(customer: Customer) {
+  console.log(`Customer Name: ${customer.name}`);
+  console.log(`Membership Level: ${MembershipLevel[customer.membership]}`);  // Convert enum to string
+}
+
+displayCustomerDetails(customer1);
+```
 
 ## 5.
 ### Question
