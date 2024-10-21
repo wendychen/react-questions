@@ -118,14 +118,15 @@ console.log(customers);
   font-size: 18px;
 }
 .container .shop-list {
-   list-style: none;
-   margin-left: -15px;
+  list-style: none;
+  margin-left: -15px;
 }
-.container .shop-list li.item { color: green;
+.container .shop-list li.item {
+  color: green;
 }
 .container .shop-list .item {
     /* Explain why does this color not works, and how to fix make it work on 1st list */
-   color: blue;
+  color: blue;
 }
 /* Write styling make every other line give background color to next one */
 ```
