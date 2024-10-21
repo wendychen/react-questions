@@ -15,6 +15,7 @@ profession can only have ‘student’, ‘freelancer’, ‘productOwner’, �
 Q1. Please follow the principle (‘firstName’ + ‘lastName’ + ‘customerID’) to sort this array and print it out.
 **/
 ```
+
 ### Answer 1
 
 ```javascript=
@@ -33,9 +34,12 @@ console.log(sortedCustomers);
 ```
 
 ### Question 2
+
+```javascript=
 /**
 Q2. Please sort by ‘profession’ to follow the principle. (‘systemAnalytics’ > ‘engineer’ > ‘productOwner’ > ‘freelancer’ > ‘student’’)
 **/
+```
 
 ### Answer 2
 
@@ -127,6 +131,9 @@ function getUniqueNumber (items) {
 ```
 ### Answer
 
+Interface and Enum are commonly used in TypeScript, while TypeScript is a superset of JavaScript.
+`Interface` is to define the structure of an object.
+`Enum` is to define a set of name constants, and each represents a distinct value.
 
 ## 5.
 ### Question
