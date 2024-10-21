@@ -4,7 +4,7 @@
 
 ### Question 1
 
-```javascript=
+```javascript
 There is an array, each item has such format:
 { firstName: 'xxx', lastName: 'xxx', customerID: 'xxx', note: 'xxx', profession: ‘xxx’ }
 lastName, note can be empty, customerID can only be a set of digital numbers.
@@ -18,7 +18,7 @@ Q1. Please follow the principle (‘firstName’ + ‘lastName’ + ‘customerI
 
 ### Answer 1
 
-```javascript=
+```javascript
 // Function to sort the array
 function sortUserName(user) {
   return user.sort((a, b) => {
@@ -35,7 +35,7 @@ console.log(sortedCustomers);
 
 ### Question 2
 
-```javascript=
+```javascript
 /**
 Q2. Please sort by ‘profession’ to follow the principle. (‘systemAnalytics’ > ‘engineer’ > ‘productOwner’ > ‘freelancer’ > ‘student’’)
 **/
@@ -43,12 +43,12 @@ Q2. Please sort by ‘profession’ to follow the principle. (‘systemAnalytics
 
 ### Answer 2
 
-```javascript=
+```javascript
 ```
 
 ## 2.
 
-```html=
+```html
 <div class="container">
     <div class="header">5/8 外出確認表</div>
         <div class="content">
@@ -69,7 +69,7 @@ Q2. Please sort by ‘profession’ to follow the principle. (‘systemAnalytics
 </div>
 ```
 
-```css=
+```css
 .container {
   font-size: 14px;
 }
@@ -97,7 +97,7 @@ Q2. Please sort by ‘profession’ to follow the principle. (‘systemAnalytics
 A: Instead of using `.container .shop-list .item`, we need to use `.container ol.shop-list .item` to make it work on the 1st list.
 
 #### Write styling make every other line give background color to next one
-```css=
+```css
 .container .shop-list li:nth-child(odd) {
   background-color: white; /* This applies to odd items */
 }
@@ -110,7 +110,7 @@ A: Instead of using `.container .shop-list .item`, we need to use `.container ol
 ## 3.
 
 ### Question
-```javascript=
+```javascript
 /**
 let items = [1, 1, 1, 5, 2, 3, 4, 3, 3, 3, 3, 3, 3, 7, 8, 5, 4, 9, 0, 1, 3, 2, 6, 7, 5, 4, 4, 7, 8, 8, 0, 1, 2, 3, 1];
 Please write down a function to console log unique value from this array.
@@ -118,7 +118,7 @@ Please write down a function to console log unique value from this array.
 ```
 
 ### Answer
-```javascript=
+```javascript
 function getUniqueNumber (items) {
     console.log(Array.from(new Set(items)));
 }
@@ -126,7 +126,7 @@ function getUniqueNumber (items) {
 
 ## 4.
 ### Question
-```
+```javascript
 /** Can you explain about Interface and Enum, and where will you be using, please make some examples. **/
 ```
 ### Answer
@@ -137,7 +137,7 @@ function getUniqueNumber (items) {
 
 ## 5.
 ### Question
-```javascript=
+```javascript
 /** Can you explain the problem with the following code, and how to fix it. **/
 class Count extends React.Component { constructor(props) {
 super(props);
@@ -167,12 +167,12 @@ ReactDOM.render(
 
 ## 6.
 ### Question
-```
+```javascript
 /** Please write the sample code to debounce handleOnChange **/
 ```
 
 ### Answer
-```javascript=
+```javascript
 var SearchBox = React.createClass({
   timeout: null, // To store the timeout ID
   
