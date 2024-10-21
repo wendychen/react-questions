@@ -134,6 +134,7 @@ console.log(customers);
 ### Answers
 
 #### Explain why does this color not works
+The selector `.container .shop-list .item` has lower specificity than the selector `.container .shop-list li.item`, so the latter option will be used.
 
 #### How to fix it to make it work on the 1st list
 A: Instead of using `.container .shop-list .item`, we need to use `.container ol.shop-list .item` to make it work on the 1st list.
@@ -141,11 +142,11 @@ A: Instead of using `.container .shop-list .item`, we need to use `.container ol
 #### Write styling make every other line give background color to next one
 ```css
 .container .shop-list li:nth-child(odd) {
-  background-color: white; /* This applies to odd items */
+  background-color: green; /* This applies to odd items */
 }
 
 .container .shop-list li:nth-child(even) {
-  background-color: lightgray; /* This applies to even items */
+  background-color: blue; /* This applies to even items */
 }
 ```
     
