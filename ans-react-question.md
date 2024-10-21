@@ -163,7 +163,7 @@ Please write down a function to console log unique value from this array.
 ### Answer
 ```javascript
 function getUniqueNumber (items) {
-    console.log(Array.from(new Set(items)));
+  console.log(Array.from(new Set(items)));
 }
 ```
 
@@ -177,6 +177,8 @@ function getUniqueNumber (items) {
 - `Interface` and `Enum` are commonly used in TypeScript, while TypeScript is a superset of JavaScript.
 - `Interface` is to define the structure of an object.
 - `Enum` is to define a set of name constants, and each represents a distinct value.
+
+
 
 ## 5.
 ### Question
