@@ -208,6 +208,14 @@ ReactDOM.render(
 ```
 
 ### Answer
+All the 3 statements, `this.setState({ count: this.state.count + 1 });`, inside `handleAddCount()`, will set the state to `1` instead of incrementing it to `3`. The reason is that, `setState` is asynchronous, therefore, the state won't be immediately updated.
+To fix this problem, we need to catch the current state first. Let's revise the code:
+
+```javascript
+handleAddCount() {
+  this.setState((prevState) => ({ count: prevState.count + 3 }));
+}
+```
 
 ## 6.
 ### Question
