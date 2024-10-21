@@ -147,11 +147,28 @@ ReactDOM.render(
 ```
 
 ## 6.
-```
+```javascript=
 /** Please write the sample code to debounce handleOnChange **/
-var SearchBox = React.createClass({ render: function() {
-return <input type="search" name="p" onChange={this.handleOnChange} />;
-},
-handleOnChange: function(event) { // make ajax call
-} });
+var SearchBox = React.createClass({
+  timeout: null, // To store the timeout ID
+  
+  render: function() {
+    return <input type="search" name="p" onChange={this.handleOnChange} />;
+  },
+  
+  handleOnChange: function(event) { 
+    const query = event.target.value;
+    
+    // Clear any previous timeout
+    if (this.timeout) {
+      clearTimeout(this.timeout);
+    }
+
+    // make ajax call (debounced)
+    this.timeout = setTimeout(() => {
+      // Perform the ajax call here with the search query
+      console.log('Search query:', query); // Placeholder for actual ajax call
+    }, 300); // 300ms debounce delay
+  }
+});
 ```
