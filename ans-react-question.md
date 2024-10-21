@@ -2,8 +2,8 @@
 
 ## 1.
 
-### Question
-<mark>
+### Question 1
+
 ```javascript=
 There is an array, each item has such format:
 { firstName: 'xxx', lastName: 'xxx', customerID: 'xxx', note: 'xxx', profession: ‘xxx’ }
@@ -15,9 +15,7 @@ profession can only have ‘student’, ‘freelancer’, ‘productOwner’, �
 Q1. Please follow the principle (‘firstName’ + ‘lastName’ + ‘customerID’) to sort this array and print it out.
 **/
 ```
-</mark>
-
-### Answer
+### Answer 1
 
 ```javascript=
 // Function to sort the array
@@ -32,6 +30,16 @@ function sortUserName(user) {
 // Sort and print the result
 const sortedCustomers = sortUserName(customers);
 console.log(sortedCustomers);
+```
+
+### Question 2
+/**
+Q2. Please sort by ‘profession’ to follow the principle. (‘systemAnalytics’ > ‘engineer’ > ‘productOwner’ > ‘freelancer’ > ‘student’’)
+**/
+
+### Answer 2
+
+```javascript=
 ```
 
 ## 2.
