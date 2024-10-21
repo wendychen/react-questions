@@ -7,7 +7,7 @@
 ```javascript
 /**
 There is an array, each item has such format:
-{ firstName: 'xxx', lastName: 'xxx', customerID: 'xxx', note: 'xxx', profession: ‘xxx’ }
+{ firstName: 'xxx', lastName: 'xxx', customerID: 'xxx', note: 'xxx', profession: 'xxx' }
 lastName, note can be empty, customerID can only be a set of digital numbers.
 profession can only have ‘student’, ‘freelancer’, ‘productOwner’, ‘engineer’ or ‘systemAnalytics’.
 **/
@@ -174,7 +174,7 @@ function getUniqueNumber (items) {
 ```
 ### Answer
 
-- Interface and Enum are commonly used in TypeScript, while TypeScript is a superset of JavaScript.
+- `Interface` and `Enum` are commonly used in TypeScript, while TypeScript is a superset of JavaScript.
 - `Interface` is to define the structure of an object.
 - `Enum` is to define a set of name constants, and each represents a distinct value.
 
