@@ -131,9 +131,9 @@ function getUniqueNumber (items) {
 ```
 ### Answer
 
-Interface and Enum are commonly used in TypeScript, while TypeScript is a superset of JavaScript.
-`Interface` is to define the structure of an object.
-`Enum` is to define a set of name constants, and each represents a distinct value.
+- Interface and Enum are commonly used in TypeScript, while TypeScript is a superset of JavaScript.
+- `Interface` is to define the structure of an object.
+- `Enum` is to define a set of name constants, and each represents a distinct value.
 
 ## 5.
 ### Question
