@@ -19,6 +19,18 @@ Q1. Please follow the principle (‘firstName’ + ‘lastName’ + ‘customerI
 ### Answer 1
 
 ```javascript
+// customers is an array, each item has the format mentioned in the question.
+/*
+// Sample array
+const customers = [
+  { firstName: 'John', lastName: 'Doe', customerID: '123', note: '', profession: 'engineer' },
+  { firstName: 'Alice', lastName: 'Smith', customerID: '456', note: 'VIP', profession: 'freelancer' },
+  { firstName: 'Bob', lastName: '', customerID: '789', note: 'New', profession: 'student' },
+  { firstName: 'John', lastName: 'Smith', customerID: '101', note: '', profession: 'productOwner' },
+  { firstName: 'Jane', lastName: 'Doe', customerID: '102', note: 'Important', profession: 'systemAnalytics' }
+];
+*/
+
 // Function to sort the array
 function sortUserName(user) {
   return user.sort((a, b) => {
@@ -44,6 +56,34 @@ Q2. Please sort by ‘profession’ to follow the principle. (‘systemAnalytics
 ### Answer 2
 
 ```javascript
+// Sample array
+/*
+const customers = [
+  { firstName: 'John', lastName: 'Doe', customerID: '123', note: '', profession: 'engineer' },
+  { firstName: 'Alice', lastName: 'Smith', customerID: '456', note: 'VIP', profession: 'freelancer' },
+  { firstName: 'Bob', lastName: '', customerID: '789', note: 'New', profession: 'student' },
+  { firstName: 'John', lastName: 'Smith', customerID: '101', note: '', profession: 'productOwner' },
+  { firstName: 'Jane', lastName: 'Doe', customerID: '102', note: 'Important', profession: 'systemAnalytics' }
+];
+*/
+
+// Custom profession ranking
+const professionRank = {
+  'systemAnalytics': 5,
+  'engineer': 4,
+  'productOwner': 3,
+  'freelancer': 2,
+  'student': 1
+};
+
+// Sorting logic based on profession ranking
+customers.sort((a, b) => {
+  return professionRank[b.profession] - professionRank[a.profession];
+});
+
+// Print the sorted array
+console.log(customers);
+
 ```
 
 ## 2.
