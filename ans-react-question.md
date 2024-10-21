@@ -112,13 +112,15 @@ function getUniqueNumber (items) {
 ```
 
 ## 4.
+### Question
 ```
 /** Can you explain about Interface and Enum, and where will you be using, please make some examples. **/
 ```
-
+### Answer
 
 
 ## 5.
+### Question
 ```javascript=
 /** Can you explain the problem with the following code, and how to fix it. **/
 class Count extends React.Component { constructor(props) {
@@ -145,10 +147,16 @@ ReactDOM.render(
 <Count />, document.getElementById('root')
 );
 ```
+### Answer
 
 ## 6.
-```javascript=
+### Question
+```
 /** Please write the sample code to debounce handleOnChange **/
+```
+
+### Answer
+```javascript=
 var SearchBox = React.createClass({
   timeout: null, // To store the timeout ID
   
